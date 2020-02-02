@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var apiUrl = "https://nkzx.zbx1425.tk:88/nemocert.php";
+    
+        function fallbackCopyTextToClipboard(text) {
+          var textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          try {
+            var successful = document.execCommand('copy');
+            if (successful){
+                alert("已复制结果到剪贴板。\nCopied result to clipboard.");
+            } else {
+                console.log('Fallback: Copying text command was unsuccessful');
+            }
+          } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+          }
+          document.body.removeChild(textArea);
+        }
+        function copyTextToClipboard(text) {
+          if (!navigator.clipboard) {
+            fallbackCopyTextToClipboard(text);
+            return;
+          }
+          navigator.clipboard.writeText(text).then(function() {
+            alert("已复制结果到剪贴板。\nCopied result to clipboard.");
+          }, function(err) {
+            console.error('Async: Could not copy text: ', err);
+          });
+        }
+        $(window).load(function() {
+            $(".codeinput").keydown(function(event) {
+                if ('0123456789ABCDEF'.indexOf(event.key.toUpperCase()) > -1) {
+                    this.value += event.key.toUpperCase();
+                }
+                if (event.keyCode == 8) {
+                    this.value = this.value.slice(0, -1);
+                }
+                this.value = this.value.slice(0, 4);
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                event.stopPropagation();
+                return false;
+            });
+            $(".codeinput").keyup(function(event) {
+                if (this.value.length >= this.maxLength) {
+                    var next = $(".codeinput").eq($(".codeinput").index($(this)) + 1);
+                    if (next.length > 0)
+                        next[0].focus();
+                    else
+                        this.blur();
+                }
+                if (event.keyCode == 8 && this.value.length == 0) {
+                    var next = $(".codeinput").eq($(".codeinput").index($(this)) - 1);
+                    if (next.length > 0 && $(".codeinput").index($(this)) > 0)
+                        next[0].focus();
+                }
+
+                var yellowKey = "",
+                    blueKey = "";
+                $("[id^=ir1]").each(function() {
+                    yellowKey += this.value;
+                });
+                $("[id^=ir2]").each(function() {
+                    blueKey += this.value;
+                });
+                if (yellowKey.length == 16 && blueKey.length == 16) {
+                    $(".trow.tr3").hide();
+                    $(".trow.tr4").hide();
+                    $("#tiparea").css("background-color", "#95B9C7");
+                    $("#tiptext").html("计算中, 请稍等...<br>Please wait a sec...");
+                    $("#tiparea").show();
+                    $.ajax({
+                        url: apiUrl,
+                        method: "POST",
+                        data: {
+                            yellow: yellowKey,
+                            blue: blueKey
+                        },
+                        success: function(result) {
+                            for (var i = 1; i <= 8; i++) {
+                                $("#or" + i).html(result.substring(i * 4 - 4, i * 4));
+                            }
+                            $("#tiparea").hide();
+                            $(".trow.tr3").show();
+                            $(".trow.tr4").show();
+                            copyTextToClipboard(result);
+                        },
+                        error: function(result) {
+                            $(".trow.tr3").hide();
+                            $(".trow.tr4").hide();
+                            $("#tiparea").css("background-color", "pink");
+                            $("#tiptext").html("抱歉, 服务器故障!<br>Sorry, the server is down!");
+                            $("#tiparea").show();
+                        }
+                    });
+                } else {
+                    $(".trow.tr3").hide();
+                    $(".trow.tr4").hide();
+                    $("#tiparea").css("background-color", "lightyellow");
+                    $("#tiptext").html("请对应输入黄色和蓝色代码<br>Please enter the codes accordingly");
+                    $("#tiparea").show();
+                }
+            });
+        });
+    </script>
+    <style>
+        table {
+            margin: auto
+        }
+        
+        .codeinput {
+            font-family: monospace, monospace;
+            width: 6ch;
+            padding: 0.25em 0.5ch !important;
+        }
+        
+        .codedisplay {
+            text-align: center;
+            font-family: monospace, monospace;
+        }
+        
+        .seperator {
+            user-select: none;
+            padding: 0.25em 0.5em !important;
+        }
+        
+        .seperator:after{
+            content: '—'
+        }
+        
+        .trow td {
+            padding: 0.25em 0;
+            text-align: center;
+        }
+        
+        .trow td:first-child {
+            padding-left: 1em;
+        }
+        
+        .trow td:last-child {
+            padding-right: 1em;
+        }
+        
+        .tr1 {
+            background: #ffe0b5;
+        }
+        
+        .tr2 {
+            background: lightblue;
+        }
+        
+        .tr3 {
+            background: lightgreen;
+        }
+        
+        .tr4 {
+            background: lightgreen;
+        }
+        
+    </style>
+</head>
+
+<body style="margin:0">
+    <form autocomplete="off">
+    <table cellspacing="0">
+        <tr class="trow tr1">
+            <td>
+                <input id="ir1c1" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir1c2" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir1c3" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir1c4" maxlength="4" class="codeinput" value="" />
+            </td>
+        </tr>
+        <tr class="trow tr2">
+            <td>
+                <input id="ir2c1" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir2c2" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir2c3" maxlength="4" class="codeinput" value="" />
+            </td>
+            <td class="seperator"></td>
+            <td>
+                <input id="ir2c4" maxlength="4" class="codeinput" value="" />
+            </td>
+        </tr>
+        <tr class="trow tr3" id="resultarea1" style="display:none"
+            ><td><span id="or1" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or2" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or3" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or4" class="codedisplay"></span></td
+        ></tr
+        ><tr class="trow tr3" id="resultarea1" style="display:none"
+            ><td><span id="or5" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or6" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or7" class="codedisplay"></span></td
+            ><td class="seperator"></td
+            ><td><span id="or8" class="codedisplay"></span></td
+        ></tr>
+        <tr style="height:4em; background-color:lightyellow" id="tiparea">
+            <td colspan="7">
+                <p id="tiptext" style="text-align:center">请对应输入黄色和蓝色代码<br>Please enter the codes accordingly</p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
