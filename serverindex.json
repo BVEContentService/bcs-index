@@ -3,7 +3,7 @@
     "Type": "Source",
     "Name_LO": "天津公用源服务器",
 	"Name_EN": "Tianjin BCS Public Source",
-	"APIURL": "https://api.zbx1425.tk:8953/bcs",
+	"APIURL": "https://api.zbx1425.tk:8953/bcs/indices",
 	"APIType": "JSON-json",
 	"Maintainer": "zbx1425",
 	"Homepage": "https://zbx1425.tk",
