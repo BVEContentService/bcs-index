@@ -17,8 +17,8 @@
     },
 	{
       "Type": "Source",
-      "Name_LO": "ZBX1425搭建的码云Pages存储库",
-      "Name_EN": "Gitee Pages Repository by ZBX1425",
+      "Name_LO": "个人码云Pages存储库",
+      "Name_EN": "Personal Gitee Pages Repository",
       "APIURL": "https://zbx1425.gitee.io/bcs-src",
       "APIType": "json",
       "Maintainer": "zbx1425",
