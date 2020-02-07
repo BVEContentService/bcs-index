@@ -24,6 +24,16 @@
       "Maintainer": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
+    },
+	{
+      "Type": "Source",
+      "Name_LO": "个人TetraCloud存储库",
+      "Name_EN": "Personal TetraCloud Repository",
+      "APIURL": "https://zbx1425:qazwsxedcrfv@kita.teracloud.jp/dav",
+      "APIType": "json",
+      "Maintainer": "zbx1425",
+      "Homepage": "https://zbx1425.tk",
+      "Contact": "zbx1425@outlook.com"
     }
   ]
 }

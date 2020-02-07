@@ -10,7 +10,7 @@ BVE内容服务系统是由 [@zbx1425](https://github.com/zbx1425) 开发的协�
 
 - Android 客户端 （适配Hmmsim一键线路安装）
 
-  https://github.com/zbx1425/BVEContentService-Android
+  ​	下载APK			[查看源代码](https://github.com/zbx1425/BVEContentService-Android)
 
 
 
