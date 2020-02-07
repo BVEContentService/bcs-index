@@ -14,6 +14,16 @@
       "Maintainer": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
+    },
+	{
+      "Type": "Source",
+      "Name_LO": "ZBX1425搭建的码云Pages存储库",
+      "Name_EN": "Gitee Pages Repository by ZBX1425",
+      "APIURL": "https://zbx1425.gitee.io/bcs-src",
+      "APIType": "json",
+      "Maintainer": "zbx1425",
+      "Homepage": "https://zbx1425.tk",
+      "Contact": "zbx1425@outlook.com"
     }
   ]
 }
