@@ -1,4 +1,5 @@
 ---
+layout: page
 title: 上传到网盘
 ---
 
