@@ -36,17 +36,10 @@
 	  "APIType": "httpBasicAuth",
 	  "Username": "zbx1425",
 	  "Password": "qazwsxedcrfv",
-<<<<<<< HEAD
       "Maintainer_LO": "zbx1425",
 	  "Maintainer_EN": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
     }
-=======
-	  "Maintainer": "zbx1425",
-	  "Homepage": "https://zbx1425.tk",
-	  "Contact": "zbx1425@outlook.com"
-	}
->>>>>>> 468272064ed0891f21863ccbb40805f6b2fdb02b
   ]
 }
