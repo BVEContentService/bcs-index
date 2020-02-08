@@ -24,6 +24,18 @@
       "Maintainer": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
-    }
+    },
+	{
+	  "Type": "Source",
+	  "Name_LO": "个人TeraCloud存储库",
+	  "Name_EN": "Personal TeraCloud Repository",
+	  "APIURL": "https://kita.teracloud.jp/dav",
+	  "APIType": "httpBasicAuth",
+	  "Username": "zbx1425",
+	  "Password": "qazwsxedcrfv",
+	  "Maintainer": "zbx1425",
+	  "Homepage": "https://zbx1425.tk",
+	  "Contact": "zbx1425@outlook.com"
+	}
   ]
 }
