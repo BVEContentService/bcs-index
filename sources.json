@@ -29,19 +29,6 @@
       "Contact": "zbx1425@outlook.com"
     },
 	{
-	  "Type": "Source",
-	  "Name_LO": "个人TeraCloud存储库",
-	  "Name_EN": "Personal TeraCloud Repository",
-	  "APIURL": "https://kita.teracloud.jp/dav",
-	  "APIType": "httpBasicAuth",
-	  "Username": "zbx1425",
-	  "Password": "qazwsxedcrfv",
-      "Maintainer_LO": "zbx1425",
-	  "Maintainer_EN": "zbx1425",
-      "Homepage": "https://zbx1425.tk",
-      "Contact": "zbx1425@outlook.com"
-    },
-	{
 		"Type": "Source",
 		"Name_LO": "个人TeraCloud存储库",
 		"Name_EN": "Personal TeraCloud Repository",
@@ -53,6 +40,19 @@
 		"Maintainer_EN": "Asnacinjar",
 		"Homepage": "",
 		"Contact": "asnacinjar@hotmail.com"
-	}
+	}，
+	{
+	  "Type": "Source",
+	  "Name_LO": "个人TeraCloud存储库",
+	  "Name_EN": "Personal TeraCloud Repository",
+	  "APIURL": "https://kita.teracloud.jp/dav",
+	  "APIType": "httpBasicAuth",
+	  "Username": "zbx1425",
+	  "Password": "qazwsxedcrfv",
+      "Maintainer_LO": "zbx1425",
+	  "Maintainer_EN": "zbx1425",
+      "Homepage": "https://zbx1425.tk",
+      "Contact": "zbx1425@outlook.com"
+    }
   ]
 }
