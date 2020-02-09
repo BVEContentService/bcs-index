@@ -13,46 +13,46 @@
       "APIURL": "https://api.zbx1425.tk:8953/bcs-src",
       "APIType": "httpSimple",
       "Maintainer_LO": "zbx1425",
-	  "Maintainer_EN": "zbx1425",
+      "Maintainer_EN": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
     },
-	{
+    {
       "Type": "Source",
       "Name_LO": "个人码云Pages存储库",
       "Name_EN": "Personal Gitee Pages Repository",
       "APIURL": "https://zbx1425.gitee.io/bcs-src",
       "APIType": "httpSimple",
       "Maintainer_LO": "zbx1425",
-	  "Maintainer_EN": "zbx1425",
+      "Maintainer_EN": "zbx1425",
       "Homepage": "https://zbx1425.tk",
       "Contact": "zbx1425@outlook.com"
     },
-	{
-		"Type": "Source",
-		"Name_LO": "个人TeraCloud存储库",
-		"Name_EN": "Personal TeraCloud Repository",
-		"APIURL": "https://kita.teracloud.jp/dav",
-		"APIType": "httpBasicAuth",
-		"Username": "zbx1425",
-		"Password": "qazwsxedcrfv",
-		"Maintainer_LO": "zbx1425",
-		"Maintainer_EN": "zbx1425",
-		"Homepage": "https://zbx1425.tk",
-		"Contact": "zbx1425@outlook.com"
-	},
-	{
-	  "Type": "Source",
-	  "Name_LO": "个人TeraCloud存储库",
-	  "Name_EN": "Personal TeraCloud Repository",
-	  "APIURL": "https://kita.teracloud.jp/dav",
-	  "APIType": "httpBasicAuth",
-	  "Username": "zbx1425",
-	  "Password": "qazwsxedcrfv",
-      "Maintainer_LO": "zbx1425",
-	  "Maintainer_EN": "zbx1425",
-      "Homepage": "https://zbx1425.tk",
-      "Contact": "zbx1425@outlook.com"
+    {
+        "Type": "Source",
+        "Name_LO": "个人TeraCloud存储库",
+        "Name_EN": "Personal TeraCloud Repository",
+        "APIURL": "https://kita.teracloud.jp/dav",
+        "APIType": "httpBasicAuth",
+        "Username": "zbx1425",
+        "Password": "qazwsxedcrfv",
+        "Maintainer_LO": "zbx1425",
+        "Maintainer_EN": "zbx1425",
+        "Homepage": "https://zbx1425.tk",
+        "Contact": "zbx1425@outlook.com"
+    },
+    {
+        "Type": "Source",
+        "Name_LO": "个人TeraCloud存储库",
+        "Name_EN": "Personal TeraCloud Repository",
+        "APIURL": "https://kita.teracloud.jp/dav",
+        "APIType": "httpBasicAuth",
+        "Username": "asnacinjar1",
+        "Password": "7wCwALM7XXhsJZn",
+        "Maintainer_LO": "Asnacinjar",
+        "Maintainer_EN": "Asnacinjar",
+        "Homepage": "",
+        "Contact": "asnacinjar@hotmail.com"
     }
   ]
 }
