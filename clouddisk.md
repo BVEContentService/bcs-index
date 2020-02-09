@@ -13,21 +13,37 @@ title: 上传到网盘
 
 ### 准备软件
 
-1. 虽然TeraCloud有一个线上管理网页，但是如果使用 [WinSCP](https://winscp.net/eng/download.php) 之类WebDAV管理软件则操作更加便捷。个人推荐您最好把它安装成两栏模式。
+1. （可选）虽然TeraCloud有一个线上管理网页，但是如果使用 [WinSCP](https://winscp.net/eng/download.php) 之类WebDAV管理软件则操作更加便捷。个人推荐您最好把它安装成两栏模式。
 
 2. 公用源服务器会自动计算元数据，但网盘显然无此功能。因此，您还需要下载元数据生成器。由于懒惰，元数据生成器使用PHP语言编写。请从 [PHP官网](https://windows.php.net/download) 根据您的电脑下载最新的`x64 Thread Safe` ，或`x86 Thread Safe` 版本的Zip压缩包，并解压到`C:\php`。解压时请确保`php.exe `处在 `C:\php\php.exe` 的位置。
 
-3. 请从 [Github](https://github.com/BVEContentService/MetadataGenerator) 下载元数据生成器，点击绿色小按钮并选择 `Download Zip`。将 `metadata-cli.php` 与 `metadata.bat` 解压到您那以Email命名的文件夹**的父文件夹，即外侧文件夹中。**
+3. 请从 [Github](https://github.com/BVEContentService/MetadataGenerator) 下载元数据生成器，点击绿色小按钮并选择 `Download Zip`。将 `metadata-cli.php` 与 `metadata.bat` 解压到您那以Email命名的文件夹**的父文件夹，即外侧文件夹中。**举个例子：
+
+   ```
+   │  metadata-cli.php
+   │  metadata.bat
+   | 
+   └─zbx1425.outlook.com
+       │  author.ini
+       │
+       └─MTR Modified Initial System
+               MTR Modified Initial System.html
+               MTR Modified Initial System.png
+               MTR Modified Initial System_1.0.ini
+               MTR Modified Initial System_1.0_h2.zip
+   ```
+
+   
 
 ### 生成数据
 
 1. 运行`metadata.bat`。您应该看到您所有的zip线路档被一一列出，同时Email命名的文件夹旁出现一个index文件夹。这时元数据已生成完成。
-2. 在您修改信息或增加新线路档后，请不要忘记再次运行 `metadata.bat` 以刷新元数据。
+2. **在您修改信息、更改文件夹名或增加新线路档后，请不要忘记再次运行 `metadata.bat` 以刷新元数据。然后用Index文件夹中的文件替换网盘上的同名文件**。
 3. 如果您使用TeraCloud以外的网盘业务，请修改 `metadata.bat` 中的链接。
 
 ### 上传数据
 
-1. 启动WinSCP，新建站点。注意调整以下配置：
+1. 如您使用WinSCP，新建站点。注意调整以下配置：
    * 文件协议：WebDAV
    * 加密：SSL/TLS 隐式加密
    * 主机名：kita.teracloud.jp
@@ -36,6 +52,25 @@ title: 上传到网盘
 
 2. 把`index`与您Email开头的文件夹上传到远端服务器。应该大致像这样：
 
+   ```
+   服务器根目录
+   |
+   ├─index
+   │      authors.json
+   │      packs.json
+   │
+   └─zbx1425.outlook.com
+       │  author.ini
+       │
+       └─MTR Modified Initial System
+               MTR Modified Initial System.html
+               MTR Modified Initial System.png
+               MTR Modified Initial System_1.0.ini
+               MTR Modified Initial System_1.0_h2.zip
+   ```
+   
+   
+   
    ![WinSCP Example](winscp_example.png)
 
 ### 提交服务器
