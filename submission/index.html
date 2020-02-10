@@ -73,7 +73,12 @@
 			<input id="APIURL" name="APIURL" class="element text large" type="text" maxlength="255" value="https://kita.teracloud.jp/dav" required/> 
 		</div><p class="guidelines" id="guide_3"><small>源服务器的地址。末尾不加斜杠。
 如 https://kita.teracloud.jp/dav</small></p> 
-		</li>		<li id="li_13" >
+		</li>		<li id="li_14" >
+		<label class="description" for="APIURL">API Reverse Proxy Url *</label>
+		<div>
+			<input id="APIRProxy" name="APIRProxy" class="element text large" type="text" maxlength="255" value="https://api.zbx1425.tk:8955/dav"/> 
+		</div><p class="guidelines" id="guide_14"><small>如该源服务器有反向代理服务器，其地址。</small></p> 
+		</li>       <li id="li_13" >
 		<label class="description" for="APIType">API Type *</label>
 		<div>
 		<select class="element select large" id="APIType" name="APIType"> 
