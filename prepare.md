@@ -121,11 +121,11 @@ navbar: "上传教程"
 | **天津公用源服务器** | 1000MB         | 不分库       | 共用 58GB  |
 | Github Pages         | 50MB           | 不分库       | 每人 1GB   |
 
-总体来说，建议您优先选择TeraCloud，如有问题再使用公用源服务器。
+总体来说，码云Pages综合性能最佳，但单文件大小卡得较死；TeraCloud很好，但部分运营商访问速度较慢，请尝试直连或反向代理后(详见TeraCloud上传教程)速度是否可接受；如有问题再使用公用源服务器。
 
 请根据您线路的条件选择相应教程：
 
 * [上传到TeraCloud或其它外链网盘](clouddisk.html)
 
-* [上传到公用源服务器](uploadpublic.html)
+* [上传到公用源服务器](publicsrc.html)
 * 上传到Pages或其它Git服务
