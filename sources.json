@@ -9,7 +9,7 @@
   "Contact": "zbx1425@outlook.com",
   "Servers": [
     {
-        "Type": "UGC",
+        "Type": "Disabled",
         "Name_LO": "LiveRe City 评论服务",
         "Name_EN": "LiveRe City Comment Service",
         "APIURL": "https://zbx1425.gitee.io/bcs-ugc/comment.html",
