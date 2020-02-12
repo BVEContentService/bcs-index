@@ -1,9 +1,11 @@
 {
+  "Protocol": "1.4",
   "Name_LO": "BCS 主索引",
   "Name_EN": "BCS Master Index",
   "Author_LO": "zbx1425",
   "Author_EN": "zbx1425",
-  "Homepage": "https://zbx1425.tk",
+  "Homepage": "https://bvecontentservice.gitee.io",
+  "AutoOpen": true,
   "Contact": "zbx1425@outlook.com",
   "Servers": [
     {
@@ -18,23 +20,13 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Disabled",
-        "Name_LO": "LiveRe City 评论服务",
-        "Name_EN": "LiveRe City Comment Service",
-        "APIURL": "https://bvecontentservice.gitee.io/bcs-ugc/comment.html",
-        "Author_LO": "zbx1425",
-        "Author_EN": "zbx1425",
-        "Homepage": "https://zbx1425.tk",
-        "Contact": "zbx1425@outlook.com"
-    },
-    {
         "Type": "UGC",
         "Name_LO": "Utterances(Github Issue) 评论服务",
         "Name_EN": "Utterances(Github Issue) Comment Service",
         "APIURL": "https://bvecontentservice.gitee.io/bcs-ugc/utterances.html",
-        "Author_LO": "zbx1425",
-        "Author_EN": "zbx1425",
-        "Homepage": "https://zbx1425.tk",
+        "Author_LO": "Jeremy Danyow & zbx1425",
+        "Author_EN": "Jeremy Danyow & zbx1425",
+        "Homepage": "https://github.com/BVEContentService/bcs-ugc/issues",
         "Contact": "zbx1425@outlook.com"
     },
     {
@@ -45,7 +37,7 @@
         "APIType": "httpSimple",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
-        "Homepage": "https://zbx1425.tk",
+        "Homepage": "https://api.zbx1425.tk:8953",
         "Contact": "zbx1425@outlook.com"
     },
     {
