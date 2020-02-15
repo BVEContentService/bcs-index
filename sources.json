@@ -20,6 +20,17 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
+        "Type": "Update",
+        "Name_LO": "BCS 主更新源",
+        "Name_EN": "BCS Master Update Source",
+        "APIURL": "https://api.zbx1425.tk:8953/build",
+        "APIType": "httpSimple",
+        "Author_LO": "zbx1425",
+        "Author_EN": "zbx1425",
+        "Homepage": "https://zbx1425.tk",
+        "Contact": "zbx1425@outlook.com"
+    },
+    {
         "Type": "UGC",
         "Name_LO": "Utterances(Github Issue) 评论服务",
         "Name_EN": "Utterances(Github Issue) Comment Service",
