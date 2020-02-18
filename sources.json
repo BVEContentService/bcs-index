@@ -1,5 +1,5 @@
 {
-  "Protocol": "1.4",
+  "Protocol": "1.5",
   "Name_LO": "BCS 主索引",
   "Name_EN": "BCS Master Index",
   "Author_LO": "zbx1425",
@@ -63,7 +63,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Disable",
+        "Type": "Source",
         "Name_LO": "个人TeraCloud存储库",
         "Name_EN": "Personal TeraCloud Repository",
         "APIURL": "https://kita.teracloud.jp/dav",
@@ -77,7 +77,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Disable",
+        "Type": "Source",
         "Name_LO": "个人TeraCloud存储库",
         "Name_EN": "Personal TeraCloud Repository",
         "APIURL": "https://kita.teracloud.jp/dav",
