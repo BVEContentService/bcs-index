@@ -34,7 +34,7 @@
         "Type": "UGC",
         "Name_LO": "Utterances(Github Issue) 评论服务",
         "Name_EN": "Utterances(Github Issue) Comment Service",
-        "APIURL": "https://bvecontentservice.gitee.io/bcs-ugc/utterances.html",
+        "APIURL": "https://api.zbx1425.tk:8953/bcs-ugc/ugcindex.php",
         "Author_LO": "Jeremy Danyow & zbx1425",
         "Author_EN": "Jeremy Danyow & zbx1425",
         "Homepage": "https://github.com/BVEContentService/bcs-ugc/issues",
