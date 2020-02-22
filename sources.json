@@ -9,10 +9,10 @@
   "Contact": "zbx1425@outlook.com",
   "Servers": [
     {
-        "Type": "SourceSpider",
-        "Name_LO": "BCS 主索引源抓取程序",
-        "Name_EN": "BCS Master Index Source Spider",
-        "APIURL": "https://api.zbx1425.tk:8953/bcs-index",
+        "Type": "Update",
+        "Name_LO": "BCS 主更新源",
+        "Name_EN": "BCS Master Update Source",
+        "APIURL": "https://api.zbx1425.tk:8953/build",
         "APIType": "httpSimple",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
@@ -20,10 +20,14 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Update",
-        "Name_LO": "BCS 主更新源",
-        "Name_EN": "BCS Master Update Source",
-        "APIURL": "https://api.zbx1425.tk:8953/build",
+        "Type": "Protocol",
+        "Version": "1.7",
+    },
+    {
+        "Type": "ResponseCache",
+        "Name_LO": "BCS 主索引响应缓存",
+        "Name_EN": "BCS Master Index Response Cache",
+        "APIURL": "https://api.zbx1425.tk:8953/bcs-index/responses.txt",
         "APIType": "httpSimple",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
