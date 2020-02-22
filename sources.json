@@ -21,7 +21,7 @@
     },
     {
         "Type": "Protocol",
-        "Version": "1.7",
+        "Version": "1.7"
     },
     {
         "Type": "ResponseCache",
