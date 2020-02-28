@@ -56,7 +56,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Source",
+        "Type": "Disable",
         "Name_LO": "个人码云Pages存储库",
         "Name_EN": "Personal Gitee Pages Repository",
         "APIURL": "https://zbx1425.gitee.io/bcs-src",
