@@ -56,6 +56,18 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
+        "Type": "Source",
+        "Name_LO": "OpenBVE Managed Content Service",
+        "Name_EN": "OpenBVE Managed Content Service",
+        "APIURL": "https://obpkg.zbx1425.tk/bcscompat",
+        "APIRProxy": "https://obpkg.zbx1425.tk/bcscompat-rproxy",
+        "APIType": "httpSimple",
+        "Author_LO": "zbx1425",
+        "Author_EN": "zbx1425",
+        "Homepage": "https://obpkg.zbx1425.tk",
+        "Contact": "zbx1425@outlook.com"
+    },
+    {
         "Type": "Disable",
         "Name_LO": "个人码云Pages存储库",
         "Name_EN": "Personal Gitee Pages Repository",
@@ -67,7 +79,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Source",
+        "Type": "Disable",
         "Name_LO": "个人TeraCloud存储库",
         "Name_EN": "Personal TeraCloud Repository",
         "APIURL": "https://kita.teracloud.jp/dav",
@@ -81,7 +93,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Source",
+        "Type": "Disable",
         "Name_LO": "个人TeraCloud存储库",
         "Name_EN": "Personal TeraCloud Repository",
         "APIURL": "https://kita.teracloud.jp/dav",
