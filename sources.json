@@ -57,13 +57,13 @@
     },
     {
         "Type": "Source",
-        "Name_LO": "OpenBVE Managed Content Service",
-        "Name_EN": "OpenBVE Managed Content Service",
+        "Name_LO": "OpenBVE Managed Content System",
+        "Name_EN": "OpenBVE Managed Content System",
         "APIURL": "https://obpkg.zbx1425.tk/bcscompat",
         "APIRProxy": "https://obpkg.zbx1425.tk/bcscompat-rproxy",
         "APIType": "httpSimple",
-        "Author_LO": "zbx1425",
-        "Author_EN": "zbx1425",
+        "Author_LO": "S520 & zbx1425",
+        "Author_EN": "S520 & zbx1425",
         "Homepage": "https://obpkg.zbx1425.tk",
         "Contact": "zbx1425@outlook.com"
     },
