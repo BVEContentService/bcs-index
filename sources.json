@@ -56,7 +56,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Disable",
+        "Type": "Source",
         "Name_LO": "OpenBVE Managed Content System",
         "Name_EN": "OpenBVE Managed Content System",
         "APIURL": "https://obpkg.zbx1425.tk/bcscompat",
