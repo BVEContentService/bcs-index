@@ -13,7 +13,7 @@
         "Version": "1.7"
     },
     {
-        "Type": "ResponseCache",
+        "Type": "Disable",
         "Name_LO": "BCS 主索引响应缓存",
         "Name_EN": "BCS Master Index Response Cache",
         "APIURL": "https://api.zbx1425.tk:8953/bcs-index/responses.txt",
@@ -36,8 +36,8 @@
     },
     {
         "Type": "UGC",
-        "Name_LO": "Utterances(Github Issue) 评论服务",
-        "Name_EN": "Utterances(Github Issue) Comment Service",
+        "Name_LO": "BVECS 自建评论服务",
+        "Name_EN": "BVECS Comment Service",
         "APIURL": "https://api.zbx1425.tk:8953/bcs-ugc/ugcindex.php",
         "Author_LO": "Jeremy Danyow & zbx1425",
         "Author_EN": "Jeremy Danyow & zbx1425",
@@ -45,7 +45,7 @@
         "Contact": "zbx1425@outlook.com"
     },
     {
-        "Type": "Source",
+        "Type": "Disable",
         "Name_LO": "天津公用源服务器",
         "Name_EN": "Tianjin BCS Public Source",
         "APIURL": "https://api.zbx1425.tk:8953/bcs-src",
@@ -57,14 +57,14 @@
     },
     {
         "Type": "Source",
-        "Name_LO": "OpenBVE Managed Content System",
-        "Name_EN": "OpenBVE Managed Content System",
-        "APIURL": "https://obpkg.zbx1425.tk/bcscompat",
-        "APIRProxy": "https://obpkg.zbx1425.tk/bcscompat-rproxy",
+        "Name_LO": "BVE 资源集中索引系统",
+        "Name_EN": "BVE Content Service",
+        "APIURL": "https://api.bvecs.tk",
+        "APIRProxy": "https://api.bvecs.tk",
         "APIType": "httpSimple",
-        "Author_LO": "S520 & zbx1425",
-        "Author_EN": "S520 & zbx1425",
-        "Homepage": "https://obpkg.zbx1425.tk",
+        "Author_LO": "zbx1425",
+        "Author_EN": "zbx1425",
+        "Homepage": "https://www.bvecs.tk",
         "Contact": "zbx1425@outlook.com"
     },
     {
