@@ -1,12 +1,12 @@
 {
   "Protocol": "1.7",
-  "Name_LO": "BCS 主索引",
-  "Name_EN": "BCS Master Index",
+  "Name_LO": "Hmmsim线路库 来源索引",
+  "Name_EN": "HmmsimRoutes Source Index",
   "Author_LO": "zbx1425",
   "Author_EN": "zbx1425",
-  "Homepage": "https://bvecontentservice.gitee.io/index.android.html",
+  "Homepage": "https://bvecs.zbx1425.cn/index.android.html",
   "AutoOpen": true,
-  "Contact": "zbx1425@outlook.com",
+  "Contact": "support@zbx1425.cn",
   "Servers": [
     {
         "Type": "Protocol",
@@ -14,36 +14,48 @@
     },
     {
         "Type": "Update",
-        "Name_LO": "BCS 主更新源",
-        "Name_EN": "BCS Master Update Source",
-        "APIURL": "https://svc.bvecs.tk:8953/build",
+        "Name_LO": "Hmmsim线路库 主更新源",
+        "Name_EN": "HmmsimRoutes Update Source",
+        "APIURL": "https://hbb.zbx1425.cn:8953/build",
         "APIType": "httpSimple",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
-        "Homepage": "https://zbx1425.tk",
-        "Contact": "zbx1425@outlook.com"
+        "Homepage": "https://www.zbx1425.cn",
+        "Contact": "support@zbx1425.cn"
     },
     {
         "Type": "UGC",
-        "Name_LO": "BVECS 自建评论服务",
-        "Name_EN": "BVECS Comment Service",
-        "APIURL": "https://svc.bvecs.tk:8953/bcs-ugc/ugcindex.php",
+        "Name_LO": "Hmmsim线路库 自建评论服务",
+        "Name_EN": "HmmsimRoutes Comment Service",
+        "APIURL": "https://hbb.zbx1425.cn:8953/bcs-ugc/ugcindex.php",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
-        "Homepage": "https://zbx1425.tk",
-        "Contact": "zbx1425@outlook.com"
+        "Homepage": "https://www.zbx1425.cn",
+        "Contact": "support@zbx1425.cn"
     },
     {
         "Type": "Source",
-        "Name_LO": "BVE 资源集中索引系统",
-        "Name_EN": "BVE Content Service",
-        "APIURL": "https://api.bvecs.tk",
-        "APIRProxy": "https://api.bvecs.tk",
+        "Name_LO": "Hmmsim线路库 内容注册系统",
+        "Name_EN": "HmmsimRoutes Package Registry",
+        "APIURL": "http://api.bvecs.zbx1425.cn",
+        "APIRProxy": "http://api.bvecs.zbx1425.cn",
         "APIType": "httpSimple",
         "Author_LO": "zbx1425",
         "Author_EN": "zbx1425",
-        "Homepage": "https://www.bvecs.tk",
-        "Contact": "zbx1425@outlook.com"
+        "Homepage": "https://reg.bvecs.zbx1425.cn",
+        "Contact": "support@zbx1425.cn"
+    },
+    {
+        "Type": "Disable",
+        "Name_LO": "Hmmsim线路库 内容注册系统 (静态备份)",
+        "Name_EN": "HmmsimRoutes Package Registry (Static Fallback)",
+        "APIURL": "http://bvecontentservice.gitee.io/bcs-index/static-fallback",
+        "APIRProxy": "http://bvecontentservice.gitee.io/bcs-index/static-fallback",
+        "APIType": "httpSimple",
+        "Author_LO": "zbx1425",
+        "Author_EN": "zbx1425",
+        "Homepage": "https://registry.zbx1425.cn",
+        "Contact": "support@zbx1425.cn"
     }
   ]
 }
